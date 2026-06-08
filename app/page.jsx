@@ -67,7 +67,7 @@ const PROFILE = {
   email: 'parthbatra524@gmail.com',
   phone: '+91-8527903308',
   github: 'https://github.com/ParthBatra099',
-  linkedin: 'https://linkedin.com/in/parth-batra',
+  linkedin: 'https://www.linkedin.com/in/parth-batra-1856942aa/',
   cgpa: '7.7',
   college: 'Jaypee Institute of Information Technology (JIIT), Noida',
 }
