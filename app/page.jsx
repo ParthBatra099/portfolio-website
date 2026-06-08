@@ -394,7 +394,17 @@ function About() {
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-600 to-purple-600 blur-2xl opacity-50" />
               <div className="relative w-full h-full rounded-3xl glass p-8 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-5xl font-bold mb-4 glow">PB</div>
+                  <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center mb-4 glow overflow-hidden">
+                    <img 
+                      src="/profile.jpg" 
+                      alt="Parth Batra" 
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.parentElement.innerHTML = '<span class="text-5xl font-bold text-white">PB</span>';
+                      }}
+                    />
+                  </div>
                   <p className="text-slate-300 font-medium">Parth Batra</p>
                   <p className="text-slate-500 text-sm">B.Tech CSE • JIIT Noida</p>
                   <div className="mt-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-300 text-xs font-mono border border-emerald-500/20">
